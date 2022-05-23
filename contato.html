@@ -17,15 +17,18 @@
     <div class = "contato"> 
         <form> 
             <label for="nome">Nome: </label>
-            <input type="text" name="" id="nome">
+            <input type="text" name="" id="nome" onkeyup="validaNome()">
+            <div id="txtNome"> </div>
          
             <label for="nome">E-mail: </label>
-            <input type="email" name="" id="email">
+            <input type="email" name="" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"> </div>
         
             <label for="nome">Assunto: </label>
-            <textarea name="assunto" id="assunto" cols="21" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="21" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id = "txtAssunto"> </div>
 
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
 
         </form>
 
@@ -34,6 +37,6 @@
     </div>
 
 
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>
